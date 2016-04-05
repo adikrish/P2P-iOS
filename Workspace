@@ -1,0 +1,32 @@
+Browser name should be iPhone and not iOS inorder to work auto accept alert correctly.
+capabilities.setCapability(CapabilityType.BROWSER_NAME, "iPhone");
+
+
+Swipe????
+-------------
+TouchAction action = new TouchAction(driver);
+
+        int startY = element1.getLocation().getY() + (element1.getSize().getHeight() / 2);
+        int startX = element1.getLocation().getX() + (element1.getSize().getWidth() / 2);
+
+        int endX = element2.getLocation().getX() + (element2.getSize().getWidth() / 2);
+        int endY = element2.getLocation().getY() + (element2.getSize().getHeight() / 2);
+
+        action.press(startX, startY).waitAction(2000).moveTo(endX, endY).release().perform();
+        
+        
+        
+        
+        
+Find alert????
+------------------
+System.out.println("wait to dismiss any system location dialogs");
+         WebDriverWait wait = new WebDriverWait(driver, 10);
+         try {
+             wait.until(ExpectedConditions.alertIsPresent());
+             System.err.println("Alert found");
+             driver.switchTo().alert().accept();
+         } catch (Exception e) {
+             System.err.println("   no alert visible after 10 sec.");
+         }
+		

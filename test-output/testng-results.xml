@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="98277" started-at="2016-04-04T10:29:27Z" finished-at="2016-04-04T10:31:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="98277" started-at="2016-04-04T10:29:27Z" finished-at="2016-04-04T10:31:05Z">
+      <class name="com.freecharge.automation.P2P_iOS.UserLogin">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.freecharge.automation.P2P_iOS.UserLogin@57d5872c]" name="init" is-config="true" duration-ms="33665" started-at="2016-04-04T15:59:27Z" finished-at="2016-04-04T16:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.freecharge.automation.P2P_iOS.UserLogin@57d5872c]" name="LaunchApp" duration-ms="64593" started-at="2016-04-04T16:00:00Z" finished-at="2016-04-04T16:01:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+      </class> <!-- com.freecharge.automation.P2P_iOS.UserLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
